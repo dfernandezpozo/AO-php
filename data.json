@@ -1,0 +1,18 @@
+[
+    [
+        {
+            "id": 1,
+            "title": "Jugar al Ball x Pit",
+            "description": "Ir a casa de mi primo para jugar al Ball x Pit",
+            "due_date": "2025-10-14",
+            "completed": true
+        },
+        {
+            "id": 2,
+            "title": "Dedicarle 7500h a la asignatura de Alfonso",
+            "description": "Estudiar mucho para sacar buena nota con Alfonso",
+            "due_date": "2025-10-15",
+            "completed": false
+        }
+    ]
+]
