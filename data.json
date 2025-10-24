@@ -1,5 +1,5 @@
-[
-    [
+{
+    "tasks": [
         {
             "id": 1,
             "title": "Jugar al Ball x Pit",
@@ -12,7 +12,14 @@
             "title": "Dedicarle 7500h a la asignatura de Alfonso",
             "description": "Estudiar mucho para sacar buena nota con Alfonso",
             "due_date": "2025-10-15",
-            "completed": false
+            "completed": true
+        },
+        {
+            "id": "3",
+            "title": "ddw",
+            "description": "fef",
+            "due_date": "12",
+            "completed": true
         }
     ]
-]
+}

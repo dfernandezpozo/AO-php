@@ -16,16 +16,16 @@ function removeTasks()
 
         $eleccion = trim(fgets(STDIN));
 
-        foreach ($datos_json[0] as $index => $tasks) {
+        foreach ($datos_json["tasks"] as $index => $tasks) {
 
             if ($tasks["id"] === $eleccion) {
 
-                unset($datos_json[0][$index]);
+                unset($datos_json["tasks"][$index]);
 
                 break;
             }
         }
-        $datos_json = array_values($datos_json);
+        $datos_json["tasks"] = array_values($datos_json["tasks"]);
         file_put_contents('data.json', json_encode($datos_json, JSON_PRETTY_PRINT));
         echo ("Tarea borrada correctamente:\n");
         print_r($datos_json);
