@@ -9,15 +9,15 @@
         },
         {
             "id": 2,
-            "title": "Dedicarle 7500h a la asignatura de Alfonso",
-            "description": "Estudiar mucho para sacar buena nota con Alfonso",
-            "due_date": "2025-10-15",
+            "title": "pepeElpruebas",
+            "description": "es una prueba",
+            "due_date": "19-2-2000",
             "completed": true
         },
         {
             "id": "3",
-            "title": "ddw",
-            "description": "fef",
+            "title": "ddwe",
+            "description": "edde",
             "due_date": "12",
             "completed": true
         }
