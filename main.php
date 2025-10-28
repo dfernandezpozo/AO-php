@@ -10,7 +10,7 @@ require_once __DIR__ . "/taskFinished.php";
 
 function showMenu()
 {
-    // while (true) {
+     while (true) {
         
         system('clear'); 
 
@@ -56,7 +56,7 @@ function showMenu()
         echo "\nPresiona Enter para volver al menú...";
         fgets(STDIN);
     }
-// }
+ }
 
 showMenu();
 

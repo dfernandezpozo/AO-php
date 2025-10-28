@@ -34,4 +34,3 @@ function removeTasks()
     }
 }
 
-removeTasks();

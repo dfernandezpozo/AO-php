@@ -23,16 +23,9 @@
         },
         {
             "id": "4",
-            "title": "efe",
-            "description": "qw",
-            "due_date": "11",
-            "completed": true
-        },
-        {
-            "id": "5",
             "title": "pepe",
-            "description": "pepe",
-            "due_date": "8",
+            "description": "lo",
+            "due_date": "1",
             "completed": true
         }
     ]
