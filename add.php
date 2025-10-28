@@ -1,9 +1,9 @@
 <?php
-require "utilities.php";
+
 function addTasks()
 {
 
-    echo "¿Deseas añadir una nueva tarea?";
+    echo "¿Deseas añadir una nueva tarea?" ."\n";
 
     $verify = trim(fgets(STDIN));
     if ($verify === "si") {
@@ -25,7 +25,7 @@ function addTasks()
         $date = trim(fgets(STDIN));
 
 
-        echo "Completed: ";
+        echo "Completed (1 = true o 0 = false): ";
         $completed = trim(fgets(STDIN));
 
         $datos_json['tasks'][] = [
@@ -45,4 +45,5 @@ function addTasks()
     }
 }
 
-addTasks();
+
+

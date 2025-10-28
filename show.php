@@ -1,6 +1,6 @@
 <?php
 
-require "utilities.php";
+
 
 function showInfo()
 {
@@ -36,4 +36,5 @@ function showInfo()
 
 
 
-showInfo();
+
+

@@ -1,6 +1,6 @@
 <?php
 
-require "utilities.php";
+
 
 function edit()
 {
@@ -44,10 +44,11 @@ function edit()
         }
         if (!$found) {
             echo "No hay ninguna tarea con ese id" . "\n";
-        } else {
-            echo "Edición cancelada,volviendo al menú..." . "\n";
         }
+    } else {
+        echo "No deseas editar ninguna tarea, volviendo al menú principal...";
     }
 }
 
-edit();
+
+
