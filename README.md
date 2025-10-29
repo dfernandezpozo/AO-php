@@ -48,7 +48,7 @@ echo  "No hay ninguna tarea con ese id"  .  "\n";
 
 }
 ```
-⚠️**Si hay algún apartado que deseas editar simplemente pulsa** `ENTER`⚠️
+⚠️**Si hay algún apartado que NO deseas editar simplemente pulsa** `ENTER`⚠️
 ## ✅ Task Finished
 Esta función usa el `id` para saber la tarea que queremos marcar como **completada** `PERO` mediante un bucle interno se comprueba si dicha tarea está en `true` ⮕ **completada** o `false` ⮕ **no completada**.
 - En caso **afirmativo** indicará que la tarea está hecha.
