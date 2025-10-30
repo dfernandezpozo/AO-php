@@ -30,7 +30,7 @@ function removeTasks()
         echo ("Tarea borrada correctamente:\n");
         print_r($datos_json);
     } else {
-        echo "No deseas borrar nada , volviendo al menu....";
+        echo "No deseas borrar nada";
     }
 }
 

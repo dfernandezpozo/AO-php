@@ -3,15 +3,21 @@
 function addTasks()
 {
 
-    echo "¿Deseas añadir una nueva tarea?" ."\n";
+    echo "¿Deseas añadir una nueva tarea? (si/no)" . "\n";
 
     $verify = trim(fgets(STDIN));
     if ($verify === "si") {
 
         $datos_json = llamarJson();
 
-        echo "Id: ";
+
+        echo "Id (entero): ";
         $id = trim(fgets(STDIN));
+
+        if (!ctype_digit($id)) {
+            echo "El ID debe ser un número entero.\n";
+            return;
+        }
 
 
         echo "Title: ";
@@ -44,6 +50,3 @@ function addTasks()
         print_r($mostrar);
     }
 }
-
-
-

@@ -5,7 +5,7 @@
 function edit()
 {
 
-    echo "¿Deseas editar alguna tarea? " . "\n";
+    echo "¿Deseas editar alguna tarea?(si/no) " . "\n";
     $verify = trim(fgets(STDIN));
 
     if ($verify === "si") {
@@ -20,7 +20,7 @@ function edit()
 
             if ((string)$tasks["id"] === $eleccion) {
                 $found = true;
-                echo "\n---Editando tarea---\n";
+                echo "\n---Editando tarea (pulse ENTER si no desea editar algun campo)---\n";
                 echo "Nuevo nombre título de la tarea: ";
                 $newTask = trim(fgets(STDIN));
                 if ($newTask !== "") {

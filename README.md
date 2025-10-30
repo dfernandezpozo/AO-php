@@ -15,6 +15,7 @@ Contienen el funcionamiento `por separado` de cada parte de nuestra aplicación.
 Es la parte más visual del trabajo ya que mediante el uso de un **switch** se mostrará el menú principal de la aplicación.
 - Usa el `require + nombre_archivo` para poder llamar a todos los demás archivos en mi **main**.
 - El usuario podrá indicar la acción que desea aplicar a las tareas , además de poder salir del menú cuándo éste lo desee.
+- Si se presiona una opción `no válida` se indicará un mensaje de error por consola.
 ## ➕ Add 
 Función que en primera instancia nos preguntará si deseamos añadir algo.
 Debemos responder `si` para que se inicie el método , en el caso contrario volverá al **menú**.

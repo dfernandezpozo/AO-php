@@ -5,7 +5,7 @@
 function taskFinished()
 {
 
-    echo "¿Deseas marcar como completada/no completada alguna tarea? " . "\n";
+    echo "¿Deseas marcar como completada/no completada alguna tarea? (si/no) " . "\n";
     $verify = trim(fgets(STDIN));
 
     if ($verify === "si") {
