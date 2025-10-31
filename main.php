@@ -1,5 +1,5 @@
 <?php
-
+// Conectamos el resto de archivos con nuestro main
 require_once __DIR__ . "/utilities.php";
 require_once __DIR__ . "/edit.php";
 require_once __DIR__ . "/add.php";
@@ -7,7 +7,8 @@ require_once __DIR__ . "/remove.php";
 require_once __DIR__ . "/show.php";
 require_once __DIR__ . "/taskFinished.php";
 
-
+// Función que muestra el menú principal de la aplicación
+// y llama a las demás funciones mediante un switch
 function showMenu()
 {
      while (true) {

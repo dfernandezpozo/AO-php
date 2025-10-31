@@ -1,11 +1,12 @@
 <?php
 
-require "utilities.php";
+// Función que permite al usuario borrar una tarea
+// mediante su ID
 
 function removeTasks()
 {
 
-    echo "¿Deseas borrar alguna tarea?" . "\n";
+    echo "¿Deseas borrar alguna tarea? (si/no)" . "\n";
     $verify = trim(fgets(STDIN));
 
     if ($verify === "si") {

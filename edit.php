@@ -1,7 +1,7 @@
 <?php
 
-
-
+// Función que permite al usuario editar cualquier parte de
+// la tarea indicando previamente su ID.
 function edit()
 {
 
@@ -20,7 +20,7 @@ function edit()
 
             if ((string)$tasks["id"] === $eleccion) {
                 $found = true;
-                echo "\n---Editando tarea (pulse ENTER si no desea editar algun campo)---\n";
+                echo "\n---Editando tarea (pulse ENTER si no desea editar algún campo)---\n";
                 echo "Nuevo nombre título de la tarea: ";
                 $newTask = trim(fgets(STDIN));
                 if ($newTask !== "") {
@@ -42,11 +42,12 @@ function edit()
                 break;
             }
         }
+        // Si el id no existe el programa lo indicará
         if (!$found) {
             echo "No hay ninguna tarea con ese id" . "\n";
         }
     } else {
-        echo "No deseas editar ninguna tarea, volviendo al menú principal...";
+        echo "No deseas editar ninguna tarea";
     }
 }
 

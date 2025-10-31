@@ -1,7 +1,7 @@
 <?php
 
-
-
+// Función que enseña todas las tareas que hay en el json
+// y permite filtrar la muestra por completadas/no completadas
 function showInfo()
 {
 
@@ -22,7 +22,7 @@ function showInfo()
                 print_r($tasks);
             }
         }
-    } elseif ((int)$respuesta1 === 2) {
+    } else if ((int)$respuesta1 === 2) {
         echo "Tareas no completadas:\n";
         foreach ($datos_json["tasks"] as $task) {
             if ($task["completed"] === false) {

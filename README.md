@@ -10,7 +10,7 @@ Trabajo cuya finalidad es realizar una aplicación de gestión de tareas en **ph
 - ***Todo el contenido repetitivo lo he creado en utilities.php***.
 ## ⚙️ Métodos 
 Contienen el funcionamiento `por separado` de cada parte de nuestra aplicación.
-**En cada método siempre se pregunta al usuario si desea realizar esa acción y cada acción modificará el archivo** `.json` **para la** `persistencia de datos`
+**En cada método siempre se pregunta al usuario si desea realizar esa acción y cada acción modificará el archivo** `.json` **para la** `persistencia de datos`.
 ## 🚀 Main 
 Es la parte más visual del trabajo ya que mediante el uso de un **switch** se mostrará el menú principal de la aplicación.
 - Usa el `require + nombre_archivo` para poder llamar a todos los demás archivos en mi **main**.
@@ -19,6 +19,7 @@ Es la parte más visual del trabajo ya que mediante el uso de un **switch** se m
 ## ➕ Add 
 Función que en primera instancia nos preguntará si deseamos añadir algo.
 Debemos responder `si` para que se inicie el método , en el caso contrario volverá al **menú**.
+Para el manejo de errores a la hora de establecer un `id` se indica que el usuario debe escribir un **número entero**.
 <sub>`A la hora de rellenar el apartado de completed debes poner 0 si es false y 1 si es true: `</sub>
 
 ```php
@@ -52,6 +53,7 @@ echo  "No hay ninguna tarea con ese id"  .  "\n";
 ⚠️**Si hay algún apartado que NO deseas editar simplemente pulsa** `ENTER`⚠️
 ## ✅ Task Finished
 Esta función usa el `id` para saber la tarea que queremos marcar como **completada** `PERO` mediante un bucle interno se comprueba si dicha tarea está en `true` ⮕ **completada** o `false` ⮕ **no completada**.
+Para el **manejo de errores** si el usuario prueba editar una tarea que no existe el programa se encargará de indicarlo correctamente con un mensaje.
 - En caso **afirmativo** indicará que la tarea está hecha.
 - En caso **negativo** preguntará al usuario si desea marcarla como realizada. Si acepta pasará a completarse de manera automática.
 ```php

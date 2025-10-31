@@ -1,4 +1,6 @@
 <?php
+// Función que permite decodificar el .json para tenerlo en 
+// un array y poder manejar mejor los datos
 if (!function_exists('llamarJson')) {
     function llamarJson()
     {

@@ -1,7 +1,7 @@
 <?php
 
-
-
+// Función que permite al usuario completar la tarea indicada
+// con el id que ponga.
 function taskFinished()
 {
 
@@ -45,12 +45,14 @@ function taskFinished()
                 break;
             }
         }
-
+        // Si no encuentra el id se mostrará un mensaje.
         if (!$encontrado) {
             echo "No se encontró ninguna tarea con ese ID.\n";
         }
+        // Si no desea marcar nada , mostrará le mensaje y 
+        // pedirá de volver al menú.
     } else {
-        echo "Nada marcado, volviendo al menú....\n";
+        echo "Nada marcado\n";
     }
 }
 

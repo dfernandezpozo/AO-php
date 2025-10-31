@@ -1,5 +1,6 @@
 <?php
 
+// Función que añade una nueva tarea a nuestro json si el usuario lo desea.
 function addTasks()
 {
 
@@ -10,7 +11,7 @@ function addTasks()
 
         $datos_json = llamarJson();
 
-
+        // Verificamos que se introduzca un númeor válido
         echo "Id (entero): ";
         $id = trim(fgets(STDIN));
 
@@ -45,7 +46,7 @@ function addTasks()
         echo ("Tarea añadida correctamente:\n");
         print_r($datos_json);
     } else {
-        echo "Cerrando programa...";
+        echo "Cerrando programa..."."\n";
         $mostrar = llamarJson();
         print_r($mostrar);
     }
